@@ -6,7 +6,7 @@ public class TestRreth {
 	  System.out.println(r1);
 	  
 	  System.out.println("Perimetri i rrethit eshte: " + r1.getPerimeter());
-	  System.out.println("Siperfaqja i rrethit eshte: " + r1.getSiperfaqja());
+	  System.out.println("Siperfaqja i rrethit eshte: " + r1.getSiperfaqe());
 	}
 
 }

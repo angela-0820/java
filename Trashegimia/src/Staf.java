@@ -48,6 +48,11 @@ public String toString() {
 	
 	return super.toString() + String.format("Titulli: %s\n", titulli);
 }
- 
+@Override
+public boolean rishikoPaga() {
+	if(getVitetPunesimit() < 5) return false;
+	this.setPaga(paga*1.1);
+	return true;
+}
  
 }

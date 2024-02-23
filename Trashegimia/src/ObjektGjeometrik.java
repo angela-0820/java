@@ -1,6 +1,16 @@
+/**
+ * Kur nje klase deklarohet abstrakte abstrakte, kjo klase nuk mund te inicializohet.
+ * Per kete arsye tek klasa TestObjektGjeometrik do merrni disa gabime.
+ * Klasa abstrakte mund te kene konstruktore qe mund te perdoren nga nenklasat.
+ * Dhe mund te kene metoda konkrete qe mund te perdoren nga nenklasat.
+ * Klasat abstrakte mund te permbajne metoda abstrakte me ane te fjales kyce abstract.
+ * Metodat abstrakte deklarohen pa trupin e metodes dhe duhet te implemetohen nga nenklasat.
+ * 
+ * Nje klase klase qe permban nje metode abstrakte duhet te deklarohet abstrakte.
+ */
 import java.util.Date;
 
-public class ObjektGjeometrik {
+public abstract class ObjektGjeometrik {
 	
 protected String ngjyra;
 protected boolean ngjyrosur;
@@ -62,4 +72,13 @@ public String toString() {
 
 
 }
+/**
+ * duhet te kete nje implementim konkret tek nneklasat , duhet bere override
+ */
+public abstract double getSiperfaqe();
+/**
+ * duhet te kete nje implementim konkret tek nneklasat , duhet bere override
+ */
+public abstract double getPerimeter();
+
 }

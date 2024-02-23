@@ -5,14 +5,14 @@ import java.util.Date;
  * Klasa Punjones eshte-nje nenklase e klases Person. 
  * @author Anxhela
  */
-public class Punjones extends Person {
+public  class Punjones extends Person {
 	
 	protected String zyra;
 	protected double paga;
 	protected Data dataPunesimit;
 	final static public int MOSHAPENSIONIT = 65;
 	
-public Punjones() {
+public   Punjones() {
 	super();
 }
 

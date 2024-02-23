@@ -6,7 +6,7 @@ public class TestKatrori {
 		  System.out.println(k1);
 		  
 		  System.out.println("Perimetri i Katrorit eshte: " + k1.getPerimeter());
-		  System.out.println("Siperfaqja i Katrorit eshte: " + k1.getSiperfaqja());
+		  System.out.println("Siperfaqja i Katrorit eshte: " + k1.getSiperfaqe());
 
 	}
 

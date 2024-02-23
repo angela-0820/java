@@ -40,12 +40,13 @@ public double getBrinja1() {
 public void setBrinja1(double brinja1) {
 	this.brinja1 = brinja1;
 }
-
+@Override
 
 public double getPerimeter() {
 	return 4*brinja1;
 }
-public double getSiperfaqja() {
+@Override
+public double getSiperfaqe() {
 return	brinja1*brinja1;
 }
 @Override

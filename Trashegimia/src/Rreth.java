@@ -5,6 +5,7 @@
  *Perimetri = 2 * pi * rrezja
  *Siperfaqja = pi * rrezja * rrezja
  *@author Anxhela
+ *
  */
 public class Rreth  extends ObjektGjeometrik{
      private double rrezja = 1.0;
@@ -41,10 +42,12 @@ public class Rreth  extends ObjektGjeometrik{
 	public void setRrezja(double rrezja) {
 		this.rrezja = rrezja;
 	}
+	@Override
 	public double getPerimeter() {
 		return 2 * Math.PI * rrezja;
 	}
-	public double getSiperfaqja() {
+	@Override
+	public double getSiperfaqe() {
 	return	Math.PI * rrezja * rrezja; 
 	}
 	@Override

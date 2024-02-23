@@ -25,11 +25,17 @@ public class Trekendesh extends ObjektGjeometrik {
 	 * @param brinjaA
 	 * @param brinjaB
 	 * @param brinjaC
+	 * @throws IllegalArgumentException  kur njera nga brinjet eshte negative
 	 */
 	public Trekendesh(String ngjyra, boolean ngjyrosur,double brinjaA, double brinjaB, double brinjaC) {
 		super(ngjyra, ngjyrosur);
 		System.out.println("Konstruktori me parametra i klases Trekendesh");
-	
+
+
+		
+		
+		
+		
 	this.brinjaA = brinjaA;
 	this.brinjaB = brinjaB;
 	this.brinjaC = brinjaC;
@@ -76,7 +82,7 @@ public class Trekendesh extends ObjektGjeometrik {
 	 * Llogarit perimetrin e treknedeshit
 	 * @return brinjaA + brinjaB + brinjaC;
 	 */
-
+@Override
 public double getPerimeter() {
 	return brinjaA + brinjaB + brinjaC;
 	
@@ -85,7 +91,8 @@ public double getPerimeter() {
  * Llogarit siperfaqen e trekendeshit sipas formules se Heronit
  * @return siperfaqen e trekendeshit
  */
-public double getSiperfaqja() {
+@Override
+public double getSiperfaqe() {
 	double hp = getPerimeter()/2.0; // hp eshte gjysem perimetri
 	return Math.sqrt( hp* (hp - brinjaA)*(hp - brinjaB)*(hp - brinjaC));
 }
